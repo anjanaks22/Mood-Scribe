@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodScribe</title>
+    <!-- Google Font Import for 'Inter' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>📝 MoodScribe</h1>
+        <p>Your personal diary with mood tracking</p>
+    </header>
+
+    <main>
+        <section class="entry-section card">
+            <h2>New Diary Entry</h2>
+            <textarea id="diaryInput" placeholder="Write about your day..."></textarea>
+            <button id="saveEntry">💾 Save Entry</button>
+        </section>
+
+        <section class="entries-list card">
+            <h2>📜 Previous Entries</h2>
+            <ul id="entryList"></ul>
+        </section>
+
+        <section class="calendar-section card">
+            <h2>📅 Mood Calendar</h2>
+            <div id="calendar"></div>
+        </section>
+
+        <section class="graph-section card">
+            <h2>📈 Mood Trend</h2>
+            <canvas id="moodChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by MoodScribe</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
